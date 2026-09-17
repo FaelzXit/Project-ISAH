@@ -17,7 +17,7 @@ site.addEventListener('click', ()=>{
 switch (true) {
 
         case (email.value !== usuario[0] || senha.value !== usuario[1]):
-            alert('Dados incorretos');
+            alert(`seu email é ${email.value} e senha é ${senha.value}`);
             break;
 
         default:
