@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!----------------------------BARRA DE NAVEGAÇÃO------------------------------------>
+
+    <div class="nav-bar">
+        <nav>
+            <div class="ul-nav">
+                <ul class="group-li">
+                    <li class="link-nav-right"><i class="fa-solid fa-bars"></i></li>
+                    <li class="link-nav-right">ISAH</li>
+
+                    <select name="cidades" id="city-name" onchange="Aparecee()">
+                        <option value="São Paulo"><button type="button" id="search">São Paulo</button></option>
+                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                        <option value="Xique-Xique">Xique-Xique</option>
+                        <option value="Florianópolis">Florianópolis</option>
+                        <option value="Cacimba de Dentro">Cacimba de Dentro</option>
+                    </select>
+
+
+                    <li class="link-nav-sun-left"><i class="fa-solid fa-sun"></i></li>&nbsp<span id="weather"></span>
+
+                    <li class="link-nav-user-left"><i class="fa-solid fa-circle-user"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--------------------------------CORPO DO SITE--------------------------------------->
+
+    <div class="text-apresentation">
+        <p class="welcome">Bem Vindo <span id="pass-param">Rafael</span></p>
+        <p class="text-initial">Sua casa na palma da sua mão</p>
+    </div>
+
+    <div class="group-sections">
+        <section id="light" role="button" onclick="mudaCor()"><i class="bi bi-lightbulb"></i>
+            <span>3</span>
+            <p> Dispositivos conectados </p>
+        </section>
+
+        <section class="temperature"><i class="bi bi-thermometer-half"></i>
+            <span>22°C</span>
+        </section>
+        <section class="trash" role="button" onclick="mudaCorTrash()"><span id="atualizar"></span><i class="bi bi-trash"></i></section>
+        <section class="add"><i class="bi bi-plus-square"></i></section>
+
+        <div class="ambiente-dropdown">
+            <select id="drop-select" aria-selected="false" onchange="trocarAmbiente()">
+                <option value="default" class="opções-casa default">Selecione um ambiente:</option>
+                <option value="cozinha" class="opções-casa">Cozinha</option>
+                <option value="banheiro" class="opções-casa">Banheiro</option>
+                <option value="quarto" class="opções-casa">Quarto</option>
+                <option value="sala" class="opções-casa">Sala</option>
+            </select>
+
+
+            <div class="text-alert-bar">
+
+            </div>
+
+
+
+</body>
+
+</html>

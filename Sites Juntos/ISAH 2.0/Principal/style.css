@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+* {
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+
+background-image: url(./img/ChatGPT\ Image\ 18\ de\ abr.\ de\ 2026\,\ 20_26_37.png)
+}
+
+/*---------BARRA DE NAVEGAÇÃO--------------------*/
+
+
+.nav-bar {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(21px);
+    box-shadow: 0 1px 32px 0 rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+    width: 100%;
+    height: 60px;
+    color: #2d2f44;
+    font-weight: 400;
+}
+
+.ul-nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.group-li {
+
+    display: inline-flex;
+}
+
+
+
+.group-li .link-nav-right {
+
+    font-size: 25px;
+    padding: 0 10px;
+
+}
+
+.link-nav-sun-left {
+
+    position: fixed;
+    ;
+    font-size: 25px;
+    right: 12%;
+
+}
+
+.link-nav-user-left {
+
+    position: absolute;
+    font-size: 34px;
+    right: 2%;
+    top: 11%;
+}
+
+
+
+#city-name {
+    outline: none;
+    border: none;
+    background: #2d2f44;
+    border-radius: 7px;
+    display: flex;
+    position: absolute;
+    right: 17%;
+    height: 40px;
+    text-align: center;
+    color: white;
+    top: 15%;
+}
+
+#city-name::placeholder {
+    color: white;
+}
+
+#weather {
+    position: absolute;
+    right: 7.5%;
+    font-size: 22px;
+    top: 25%;
+}
+
+
+
+/*-----------------------CORPO DO SITE------------------------*/
+
+.text-apresentation {
+    position: absolute;
+    display: list-item;
+    margin: 1% 10%;
+}
+
+.text-apresentation span {
+    transition: 0.6 ease-in-out;
+}
+
+.welcome {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.text-initial {
+    color: lightslategray;
+    transition: 0.6s;
+}
+
+.group-sections {
+    font-size: 40px;
+}
+
+.group-sections section {
+    width: 180px;
+    height: 170px;
+}
+
+
+#light {
+    position: absolute;
+    margin: 8.5% 0%;
+    left: 16%;
+    ;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 1px 52px 0 rgba(95, 95, 95, 0.199);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+
+#light i {
+    position: absolute;
+    top: 25%;
+    transition: 0.6s ease;
+}
+
+#light p {
+    font-size: 12px;
+    bottom: 10%;
+    display: flex;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.511);
+    transition: 0.6s ease;
+}
+
+#light span {
+    display: flex;
+    position: absolute;
+    bottom: 30%;
+    font-size: 12px;
+    margin-right: 3px;
+    transition: 0.6s ease;
+    transition: 0.6s ease;
+}
+
+#light.ativo {
+    color: white;
+    background-color: #2d2f44;
+    transition: 0.5s ease;
+}
+
+#light.ativo p {
+    color: white;
+}
+
+.temperature {
+    position: absolute;
+    margin: 8.5% 0%;
+    left: 31.3%;
+    ;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 1px 52px 0 rgba(95, 95, 95, 0.199);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.6s ease;
+}
+
+.temperature i {
+    position: absolute;
+    top: 25%
+}
+
+.temperature span {
+    display: flex;
+    position: absolute;
+    bottom: 30%;
+    font-size: 14.5px;
+    margin-right: 3px;
+
+}
+
+.trash {
+    position: absolute;
+    margin: 23.2% 0;
+    left: 16%;
+    ;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 1px 52px 0 rgba(95, 95, 95, 0.199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.6s ease;
+}
+
+.trash.ativo {
+    background-color: #2d2f44;
+    color: white;
+
+
+}
+
+.trash span {
+    position: absolute;
+    font-size: 12px;
+    bottom: 20%;
+    color: rgba(0, 0, 0, 0.511);
+    transition: 0.6s ease;
+    color: white;
+}
+
+#atualizar.ativo {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    bottom: 20%;
+    transition: 0.6s ease;
+}
+
+
+
+.add {
+    position: absolute;
+    margin: 23.2% 0;
+    left: 31.3%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 1px 52px 0 rgba(95, 95, 95, 0.199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.6s ease;
+}
+
+
+
+
+
+/*-------------------------Lado Direito Pag-----------------------*/
+
+.ambiente-dropdown {
+    width: 400px;
+    height: 360px;
+    background: rgb(255, 255, 255, 1);
+    margin: 8.5% 55%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 36px 36px;
+}
+
+.ambiente-dropdown select {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 20px 20px 0px 0px;
+    z-index: 3;
+    text-align: center;
+    font-size: 22.5px;
+    font-weight: 600;
+    background: rgb(244, 244, 250);
+    color: rgb(0, 0, 0);
+    transition: 0.4s ease;
+}
+
+.ambiente-dropdown select:hover {
+    background: #2d2f44 ;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.ambiente-dropdown select:focus {
+    background: #2d2f44;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+select option {
+
+    font-size: 15px;
+    position: absolute;
+    margin-top: -10%;
+
+}
+
+
+.text-alert-bar {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 19px;
+    font-weight: 500;
+    color: white;
+}
+
+.alert-bar {
+    position: absolute;
+    display: list-item;
+    font-size: 17.5px;
+    left: 10%;
+    top: 30%;
+    color: white;
+    font-weight: 300;
+
+}
+
+.space-opt {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgb(36, 36, 36);
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.36);
+    transition: 0.4s;
+
+}
+
+.space-opt:hover {
+    background-color: #2d2f44;
+    color: white;
+    transition: all 0.4s;
+    transform: scale(1.05);
+}
+
+
+
+
+
+.space-opt .options-alert-bar {
+    display: flex;
+    align-items: center;
+    width: 320px;
+    height: 40px;
+    margin-left: 10px;
+   
+}
+
+.options-alert-bar {
+    margin-left: 10;
+    
+}
+
+
+
+.saida-dados {
+    display: inline-flex;
+    position: absolute;
+    margin: 0 40%;
+    margin-top: -10%;
+    font-weight: 500;
+}
+
+.saida-dados:hover span{
+    color: white;
+}
+
+
+
+.default{
+    display: none;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 1024px){
+    .nav-bar{
+        height: auto;
+        padding: 0 20px;
+    }
+
+    .link-nav-user-left,
+    .link-nav-sun-left,
+    #weather,
+    #city-name{
+        position: absolute;
+        transform: scale(0.8);
+    }
+
+    .link-nav-sun-left{
+        position: absolute;
+        margin-left: 20px;
+    }
+
+    .ambiente-dropdown{
+        margin: 8.5% 50%;
+        transform: scale(0.7);
+    }
+
+     .group-sections section{
+        width: 130px;
+        height: 130px;
+    }
+
+     #light{
+        left: 17%;
+        margin-top: 15%;
+    }
+
+    .temperature{
+        left: 35%;
+        margin-top: 15%;
+
+    }
+    .trash{
+        left: 17%;
+        margin-top: 33%;
+    }
+
+    .add{
+        left: 35%;
+        margin-top: 33%;
+    }
+}
+
+@media (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-bar{
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .ul-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 15px;
+        transform: scale(0.7);
+    }
+
+    .group-li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        transform: scale(0.7);
+    }
+
+    .link-nav-user-left,
+    .link-nav-sun-left,
+    #weather,
+    #city-name{
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        transform: scale(0.7);
+    }
+
+    #city-name{
+        width: 220px;
+        transform: scale(0.7);
+    }
+
+    .text-apresentation{
+        position: relative;
+        margin: 10% 5%;
+        transform: scale(0.7);
+    }
+
+    #light{
+        left: 5%;
+        margin-top: 5%;
+        transform: scale(0.7);
+    }
+
+    .temperature{
+        left: 55%;
+        margin-top: 5%;
+        transform: scale(0.7);
+    }
+
+    .trash{
+        left: 5%;
+        margin-top: 60%;
+        transform: scale(0.7);
+    }
+
+    .add{
+        left: 55%;
+        margin-top: 60%;
+        transform: scale(0.7);
+    }
+
+    .group-sections section{
+        width: 140px;
+        height: 140px;
+    }
+
+    .ambiente-dropdown{
+        position: relative;
+        margin: 120% auto 40px auto;
+        left: 0;
+        width: 90%;
+        max-width: 400px;
+        
+    }
+
+    .ambiente-dropdown select{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .welcome{
+        font-size: 30px;
+    }
+
+    .text-initial{
+        font-size: 15px;
+    }
+
+    #light{
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 10%;
+    }
+
+    .temperature{
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 65%;
+    }
+
+    .trash{
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 120%;
+    }
+
+    .add{
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 175%;
+    }
+
+    .group-sections section{
+        width: 180px;
+        height: 180px;
+    }
+
+    .ambiente-dropdown{
+        margin-top: 250%;
+        width: 95%;
+        height: 350px;
+    }
+
+    .ambiente-dropdown select{
+        font-size: 18px;
+    }
+
+}
